@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body.roboto-body {
+body.roboto-regular {
   font-family: "Roboto", sans-serif;
   background-color: #f8f9fa; 
   min-height: 100vh;
@@ -21,6 +21,7 @@ body.roboto-body {
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
   border: 1px solid #eef2f5;
+  width: 100%;
 }
 
 .icon-inline {
@@ -40,9 +41,18 @@ body.roboto-body {
   color: #495057;
 }
 
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
 .form-control:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.15);
+}
+
+.btn {
+  border-radius: 8px;
 }
 
 #message {
