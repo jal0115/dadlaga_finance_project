@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght=0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.roboto-body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa; 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eef2f5;
+}
+
+.icon-inline {
+  font-size: 1.8rem;
+  color: #ffc107; 
+  display: inline-flex;
+  align-items: center;
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #198754; 
+}
+
+.form-label {
+  color: #495057;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.15);
+}
+
+#message {
+  min-height: 20px;
+}
