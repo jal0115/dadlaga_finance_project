@@ -68,3 +68,204 @@
 #message {
   min-height: 20px;
 }
+
+/* ═══════════════════════════════════════
+   BADGE СИСТЕМ
+═══════════════════════════════════════ */
+
+/* Navbar badge тоо */
+.nav-badge-count {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffc107;
+    color: #1a1a1a;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    transition: opacity 0.2s;
+}
+.nav-badge-count:hover {
+    opacity: 0.85;
+}
+.nav-badge-count .total {
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+/* Сарын дүгнэлт карт */
+.monthly-badge-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+}
+.monthly-badge-card .card-eyebrow {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.monthly-badge-empty {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+.monthly-badge-empty-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* Сарын дүгнэлт badge box */
+.monthly-result-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    padding: 16px 24px;
+    width: 100%;
+}
+.monthly-result-box .result-icon {
+    font-size: 2rem;
+}
+.monthly-result-box .result-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.monthly-result-box .result-diff {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.monthly-result-box .result-month {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* Preview pill badge */
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: default;
+    transition: all 0.2s;
+    border-width: 1.5px;
+    border-style: solid;
+}
+.badge-pill.earned {
+    filter: none;
+    opacity: 1;
+}
+.badge-pill.locked {
+    background: #f3f4f6 !important;
+    border-color: #e5e7eb !important;
+    color: #9ca3af !important;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+/* Offcanvas badge мөр */
+.badge-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border-width: 1.5px;
+    border-style: solid;
+    transition: all 0.2s;
+}
+.badge-row.locked {
+    opacity: 0.45;
+}
+.badge-icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+.badge-row .badge-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+.badge-row .badge-desc {
+    font-size: 0.73rem;
+    color: #9ca3af;
+}
+.badge-check {
+    font-size: 1.2rem;
+}
+.badge-lock {
+    color: #d1d5db;
+    font-size: 1rem;
+}
+
+/* Offcanvas section eyebrow */
+.section-eyebrow {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6b7280;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+/* Сарын offcanvas badge мөр */
+.badge-row-monthly {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background: #0f172a;
+    border-width: 1.5px;
+    border-style: solid;
+}
+.badge-auto-tag {
+    font-size: 0.7rem;
+    color: #64748b;
+    background: #1e293b;
+    padding: 3px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+/* Toast мэдэгдэл */
+.badge-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    padding: 14px 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    font-weight: 600;
+    font-size: 0.9rem;
+    max-width: 280px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.badge-toast .toast-icon {
+    font-size: 1.6rem;
+}
+.badge-toast .toast-label {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
